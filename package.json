@@ -1,0 +1,32 @@
+{
+  "name": "opencode-observer",
+  "version": "1.0.0",
+  "description": "OpenCode 插件：多模态视觉分析子智能体（Observer），自动拦截图片消息并调度 observer agent 进行分析",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./server": "./index.js"
+  },
+  "engines": {
+    "opencode": ">=1.17.0"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "vision",
+    "image",
+    "observer",
+    "multimodal",
+    "analysis",
+    "ocr",
+    "screenshot",
+    "ui"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyition/opencode-observer"
+  },
+  "homepage": "https://github.com/zyition/opencode-observer#readme"
+}
