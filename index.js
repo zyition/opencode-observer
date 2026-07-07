@@ -64,6 +64,11 @@ export const server = async (_ctx, options) => {
 
       agent.description = agent.description || "多模态视觉分析：读取并分析图片/截图/设计稿/日志，提取文字、还原布局、定位 UI 问题、提取报错信息"
       agent.mode = agent.mode || "subagent"
+      agent.permission = agent.permission || {
+        edit: "deny",
+        bash: "deny",
+        task: "deny",
+      }
 
       if (!agent.system && OBSERVER_SYSTEM) {
         agent.system = OBSERVER_SYSTEM

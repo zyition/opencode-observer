@@ -106,7 +106,7 @@ opencode-observer/
 | `system` | 自定义 system prompt 覆盖默认值 |
 | `description` | 自定义 agent 描述 |
 | `mode` | agent 模式（默认 subagent） |
-| `permission` | 自定义权限规则 |
+| `permission` | 默认仅允许 `read`/`glob`/`grep`/`list`，禁止 `edit`/`bash`/`task` |
 
 所有字段均为可选，插件仅在用户未设置时提供默认值。
 
